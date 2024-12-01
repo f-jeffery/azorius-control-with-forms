@@ -1,0 +1,37 @@
+/*
+Reworks the color scheme to give a light mode
+Also displays the main content in a grid when displays are large enough that it will display well
+*/
+
+:root{
+    --background_color: rgb(163, 206, 255); 
+    --true-blue: rgb(66, 164, 255);
+    --off-white: rgb(255, 253, 236);
+}
+
+*{
+    text-shadow: 1px 1px 2px var(--true-blue);
+}
+
+body
+{
+    background-color: var(--off-white);
+}
+
+header{
+    background-image: linear-gradient(var(--off-white), var(--background_color), var(--true-blue), var(--background_color), var(--off-white));
+}
+
+nav{
+    background-color: var(--true-blue);
+}
+
+@media (min-width:800px)
+{  
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        width: 80%;
+    }
+}

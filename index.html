@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+    <!--
+    I declare that the following source code was written by me, or provided
+    by the instructor for this project. I understand that copying source
+    code from any other source, providing source code to another student, 
+    or leaving my code on a public web site constitutes cheating.
+    I acknowledge that  If I am found in violation of this policy this may result
+    in a zero grade, a permanent record on file and possibly immediate failure of the class.
+    -->
+<head>
+    <title>Azorius Control Tips and Strategies</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/toggle.js"></script>
+    <script defer src="./js/validation.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <header>
+        <img src="./images/icon.png" alt = "title">
+        <div>
+            Things you could be doing <em>instead</em> of playing Azorius control
+        </div>
+
+    </header>
+    <nav>
+        <div>
+            <div>
+                <p>Home</p>
+            </div>
+            <div id="nature">
+                Enjoy Nature
+            </div>
+            <div id="friends">
+                Make Friends
+            </div>
+        </div>
+        <div>
+            <div id="mtg">
+                <p>Enjoy MtG</p>
+            </div>
+            <div id="help">
+                <p>Get Some Help</p>
+            </div>
+            <div id="logvisit">
+                <p>Log Visit</p>
+            </div>
+            <div id="toggle-mode">
+                Toggle Light Mode
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div id="home">
+                If you just wandered in here because of the pretty lights and the title of this site means nothing to you, I have good news: you're free to go.
+            </div>
+
+            <div>
+                If you're feeling guilt or some righteous indignation right now, congratulations!
+            </div>
+
+            <div>
+                This is an intervention.
+            </div>
+
+            <div>
+                Your playgroup is worried about you.  Your play patterns are self destructive and it's starting to affect everyone around you.
+                <br>
+                They just want to help you find a strategy that doesn't suck the fun out of the game.
+            </div>
+
+            <div>
+                Click the buttons on the navigation bar to see the things you could be doing instead.
+            </div>
+        </section>
+
+        <section class="hide" id="natureSection">
+            <div>
+                It's a beautiful day out.  Have you thought of going outside?  You should go outside.  You don't even have to go for a walk or anything.  Just enjoy the cool air.
+            </div>
+            <div>
+                Nice, isn't it?  Just close your eyes and breath in and out and in and out and keep doing that as my voice slowly fades away...
+            </div>
+        </section>
+
+        <section class="hide" id="friendsSection">
+            <div>
+                Just imagine how much time you'll have to socialize if you aren't playing such long games.  You could find people that share your interests.  Like the neighborhood watch.  Or maybe the HOA.
+                <br>
+                ...
+                <br>
+                No, I mean real friends.  
+                <br>
+                ...
+                <br>
+                Do you really think the people you're playing with want to hear your story about bullying the twelve year old with the aggro deck again? 
+                <br>
+                <br>
+                Oh, <a href="https://www.oremrecreation.com">look</a>! Orem has a recreation center.  Water is kind of like blue mana.  Would you like to go to the pool?
+            </div>
+        </section>
+        <section class="hide" id="mtgSection">
+            <div id = "mtgDesc">
+                Imagine this: your opponent casts their favorite card.  You can see the joy it brings them.  And you let it happen.  You don't have to say "no" to fun before it even hits the table.  You untap and pay six for Colossal Dreadmaw.  You're playing Magic as Richard Garfield intended.  You're <strong>free</strong>.
+            </div>
+            <figure>
+                <img id="Garfield" src = "./images/Richard Garfield.jpg">
+                <figcaption>Fig.1 - Richard Garfield, PHD</figcaption>
+            </figure>
+        </section>
+        <section class="hide" id="helpSection">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9Deg7VrpHbM?si=J6kkVG09mh4gFLUi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="hide" id="logvisitSection">
+            <div>
+                Please enter your information for our Wall of Shame:
+            </div>
+            <form id="logform" novalidate method="GET" action="http://www.scryfall.com">
+                <h3>General Information</h3>
+                <ul class="formlist">
+                    <li>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name here">
+                        <div class="error_msg"></div>
+                    </li>
+                    <li>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="And enter your last name here">
+                        <div class="error_msg"></div>
+                    </li>
+                    <li>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Address">
+                        <div class="error_msg"></div>
+                    </li>
+                    <li>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="City">
+                        <div class="error_msg"></div>
+                    </li>
+                    <li>
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="State">
+                        <div class="error_msg"></div>
+                    </li>
+                    <li>
+                        <label for="zip">ZIP Code</label>
+                        <input type="text" id="zip" name="zip" maxlength="5" placeholder="ZIP Code">
+                        <div class="error_msg"></div>
+                    </li>
+                    <li>
+                        <label for="cellphone">Cell Phone</label>
+                        <input type="text" id="cellphone" name="cellphone" placeholder="Cellphone number">
+                        <div class="error_msg"></div>
+                    </li>
+                    <li>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <div class="error_msg"></div>
+                    </li>
+                </ul>
+                <h3>How did you find this page?</h3>
+                <ul class="formextras">
+                    <li>
+                        <input type="checkbox" id="google" name="found_page" value="google">
+                        <label for="google">Google</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="friend" name="found_page" value="friend">
+                        <label for="friend">Friend</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="enemy" name="found_page" value="enemy">
+                        <label for="enemy">Enemy</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="wind" name="found_page" value="wind">
+                        <label for="wind">I heard it whispered on the wind</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="denny" name="found_page" value="denny">
+                        <label for="denny">I found it written on the bathroom wall in a Denny's</label>
+                        <div class="error_msg"></div>
+                    </li>
+                </ul>
+                <h3>Any other comments?</h3>
+                <textarea rows="5" id="comments" placeholder="Please enter your comments here"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
